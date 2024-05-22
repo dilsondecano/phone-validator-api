@@ -461,11 +461,11 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl34', 'ctl01', [], [], [], 
         
             
 
-      <section id="apva-hero" class="padding-tb-50 text-center">
+       <section id="apva-hero" class="padding-tb-50 text-center">
     <div class="container">
 
-        <div id="apva-hero-magnifying-glass"><img src="https://dilsondecano.github.io/people-search-api/images/magnifying-glass-icon.png" alt="Alternate Text" class="img-fluid" data-aos="fade-down" data-aos-duration="2000" data-aos-once="true" /></div>
-        <div id="apva-hero-phone"><img src="https://dilsondecano.github.io/people-search-api/images/verify-phone-number-icon.png" alt="Alternate Text" width="500" class="img-fluid" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" /></div>
+        <div id="apva-hero-magnifying-glass"><img src="/images/magnifying-glass-icon.png" alt="Alternate Text" class="img-fluid" data-aos="fade-down" data-aos-duration="2000" data-aos-once="true" /></div>
+        <div id="apva-hero-phone"><img src="/images/verify-phone-number-icon.png" alt="Alternate Text" width="500" class="img-fluid" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" /></div>
       <h1 class="mt-4">STOP FRAUD & TCPA LAWSUITS</h1>
       <h2 class="clr-text-color-1">
         Verify Phone Number, Identify Line Type & LNP - API</h2>
@@ -475,32 +475,87 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl34', 'ctl01', [], [], [], 
     </div>  
   </section>
 
+
+
+    
      <!--  Section -->
     <section id="apva-carousel" class="padding-tb-75">
+
     <div class="container">
-  <div class="row">
+  <div class="row owl-carousel">
     <div class="col-md">
         <div>
         <h2>Standard 
             <br />Search API</h2>
-        <button>See more</button>
+        <a href="#apva-identify-phone-num">See more</a>
             </div>
     </div>
     <div class="col-md">
       <div>
 <h2>Advanced 
     <br />Search API</h2>
-<button>See more</button>
+<a href="#apva-ipn-alnpapi-apiloc3">See more</a>
     </div>
     </div>
     <div class="col-md">
       <div>
 <h2>Advanced+DNC
     <br />Search API</h2>
-<button>See more</button>
+<a href="#apva-aldc-apilnd2">See more</a>
     </div>
     </div>
-          
+    
+      
+          <div class="col-md">
+      <div>
+<h2>Advanced+Caller ID
+    <br />Search API</h2>
+<a href="#apva-alcia-apilnd2">See more</a>
+    </div>
+    </div>
+
+          <div class="col-md">
+      <div>
+<h2>Reachable Number <br />Search API</h2>
+<a href="#apva-rpna-api_atn3">See more</a>
+    </div>
+    </div>
+
+          <div class="col-md">
+      <div>
+<h2>Complete <br />Search API</h2>
+<a href="#apva-cvpna-api_atx2">See more</a>
+    </div>
+    </div>
+
+          <div class="col-md">
+      <div>
+<h2>Active <br />Search API</h2>
+<a href="#apva-apn-api_atn">See more</a>
+    </div>
+    </div>
+
+          <div class="col-md">
+      <div>
+<h2>Caller ID/CNAM <br />Search API</h2>
+<a href="#apva-cica-api_cnam">See more</a>
+    </div>
+    </div>
+
+          <div class="col-md">
+      <div>
+<h2>Do-not-call List <br />Search API</h2>
+<a href="#apva-dncla-api_dnc2">See more</a>
+    </div>
+    </div>
+
+          <div class="col-md">
+      <div>
+<h2>Advanced+Active<br />Search API</h2>
+<a href="#apva-alacia-api_atc">See more</a>
+    </div>
+    </div>
+
   </div>
 </div>
         </section>
@@ -635,37 +690,51 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl34', 'ctl01', [], [], [], 
   <thead>
     <tr>
       <th scope="col" class="tableth-bground-white"></th>
-      <th scope="col">Standard<button>see more</button></th>
-      <th scope="col">Advanced<button>see more</button></th>
-      <th scope="col">Adv+<br />DNC<button>see more</button></th>
-      <th scope="col">Adv+<br />Caller ID<button>see more</button></th>
-      <th scope="col">Reachable <br />Number<button>see more</button></th>
-      <th scope="col">Adv+Reachable <br />plus Caller ID<button>see more</button></th>
-      <th scope="col">Complete<button>see more</button></th>
-      <th scope="col">Active<button>see more</button></th>
-      <th scope="col">DNC <br />list<button>see more</button></th>
-      <th scope="col">Caller <br />ID<button>see more</button></th>
+      <th scope="col" class="apva-pvt-border">Standard</th>
+      <th scope="col" class="apva-pvt-border">Advanced</th>
+      <th scope="col" class="apva-pvt-border">Adv+<br />DNC</th>
+      <th scope="col" class="apva-pvt-border">Adv+<br />Caller ID</th>
+      <th scope="col" class="apva-pvt-border">Reachable <br />Number</th>
+      <th scope="col" class="apva-pvt-border">Adv+Reachable <br />plus Caller ID</th>
+      <th scope="col" class="apva-pvt-border">Complete</th>
+      <th scope="col" class="apva-pvt-border">Active</th>
+      <th scope="col" class="apva-pvt-border">DNC <br />list</th>
+      <th scope="col" class="apva-pvt-border">Caller <br />ID</th>
 
     </tr>
   </thead>
   <tbody>
-    <tr class="tableth-bground">
-      <th scope="row">Original Line Type</th>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+    <tr class="tableth-bground apva-pvt-nopad">
+      <th scope="row" class="apva-pvt-white-bg"></th>
+      <td><a href="#">see more</a</td>
+      <td><a href="#">see more</a</td>
+      <td><a href="#">see more</a</td>
+        <td><a href="#">see more</a</td>
+<td><a href="#">see more</a</td>
+<td><a href="#">see more</a</td>
+        <td><a href="#">see more</a</td>
+<td><a href="#">see more</a</td>
+<td><a href="#">see more</a</td>
+        <td><a href="#">see more</a</td>
     </tr>
+
+      <tr class="tableth-bground">
+  <th scope="row">Original Line Type</th>
+  <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
  <tr>
      
       <th scope="row">Original Carrier</th>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
       <td></td>
       <td></td>
       <td></td>
@@ -679,12 +748,12 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl34', 'ctl01', [], [], [], 
 <tr class="tableth-bground">
       <th scope="row">Current Line Type</th>
       <td></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
       <td></td>
       <td></td>
       <td></td>
@@ -692,12 +761,12 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl34', 'ctl01', [], [], [], 
  <tr>
       <th scope="row">Current Carrier</th>
       <td></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
       <td></td>
       <td></td>
       <td></td>
@@ -705,12 +774,12 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl34', 'ctl01', [], [], [], 
 <tr class="tableth-bground">
       <th scope="row">LNP Port Check</th>
          <td></td>
-   <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-   <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-   <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-   <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-   <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-   <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+   <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+   <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+   <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+   <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+   <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+   <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
    <td></td>
    <td></td>
    <td></td>
@@ -718,64 +787,64 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl34', 'ctl01', [], [], [], 
  <tr>
       <th scope="row">SMS email</th>
       <td></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
 <tr class="tableth-bground">
       <th scope="row">Operating Company Number</th>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
  <tr>
       <th scope="row">Location</th>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
 <tr class="tableth-bground">
       <th scope="row">State</th>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
  <tr>
       <th scope="row">Timezone</th>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
       <td></td>
       <td></td>
       <td></td>
@@ -784,26 +853,26 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl34', 'ctl01', [], [], [], 
       <th scope="row">DNC Check</th>
       <td></td>
       <td></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
       <td></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
       <td></td>
       <td></td>
       <td></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
       <td></td>
     </tr>
  <tr>
       <th scope="row">TCPA Check</th>
       <td></td>
       <td></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
       <td></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
       <td></td>
       <td></td>
       <td></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
       <td></td>
     </tr>
 <tr class="tableth-bground">
@@ -812,10 +881,10 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl34', 'ctl01', [], [], [], 
       <td></td>
       <td></td>
       <td></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
       <td></td>
       <td></td>
     </tr>
@@ -824,13 +893,13 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl34', 'ctl01', [], [], [], 
       <td></td>
       <td></td>
       <td></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
       <td></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
       <td></td>
       <td></td>
-      <td><div><img src="https://dilsondecano.github.io/people-search-api/images/table-check-icon.png" alt="Alternate Text" /></div></td>
+      <td><div><img src="/images/table-check-icon.png" alt="Alternate Text" /></div></td>
 
     </tr>
  <tr class="tableth-price-factor">
@@ -859,19 +928,19 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl34', 'ctl01', [], [], [], 
             <h2>Federal DNC List check, State DNC List verification is available for the following 13 states:</h2>
             <div id="apva-dnc-list-map">
 <!--
-                <img src="https://dilsondecano.github.io/people-search-api/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-wa" />
-                <img src="https://dilsondecano.github.io/people-search-api/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-wy" />
-                <img src="https://dilsondecano.github.io/people-search-api/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-co" />
-                <img src="https://dilsondecano.github.io/people-search-api/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-ok" />
-                <img src="https://dilsondecano.github.io/people-search-api/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-tx" />
-                <img src="https://dilsondecano.github.io/people-search-api/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-ms" />
-                <img src="https://dilsondecano.github.io/people-search-api/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-tn" />
-                <img src="https://dilsondecano.github.io/people-search-api/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-inmi" />
-                <img src="https://dilsondecano.github.io/people-search-api/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-pa" />
-                <img src="https://dilsondecano.github.io/people-search-api/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-fl" />
-                <img src="https://dilsondecano.github.io/people-search-api/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-ma" />
+                <img src="/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-wa" />
+                <img src="/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-wy" />
+                <img src="/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-co" />
+                <img src="/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-ok" />
+                <img src="/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-tx" />
+                <img src="/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-ms" />
+                <img src="/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-tn" />
+                <img src="/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-inmi" />
+                <img src="/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-pa" />
+                <img src="/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-fl" />
+                <img src="/images/orange-check-icon.png" alt="Alternate Text" class="apva-dnc-check-icon-ma" />
              -->   
-                <img src="https://dilsondecano.github.io/people-search-api/images/us-map.png" alt="Alternate Text" id="apva-dnc-us-map" class="img-fluid" />
+                <img src="/images/us-map.png" alt="Alternate Text" id="apva-dnc-us-map" class="img-fluid" />
             </div>
             <p>Colorado (CO), Florida (FL), Indiana (IN), Louisiana (LA), Massachusetts (MA), Mississippi (MS), Missouri (MO), Oklahoma (OK), Pennsylvania (PA), Tennessee (TN), Texas (TX), Washington (WA), Wyoming (WY).</p>
 <p>We also report if the phone number listed as <strong>DNC Complainer</strong>. <br />These are the people who have complained but have not yet sent demand letters or sued.</p>
@@ -1046,11 +1115,13 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl34', 'ctl01', [], [], [], 
   </div>
 </section>
 
+    
+        <!--  Section
     <div class="container-fluid mt-4 load-more-container">
         <div>
             <div class="load-more">Show More</div>
         </div>
-    </div>
+    </div> 
     
 
 
@@ -1068,7 +1139,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl34', 'ctl01', [], [], [], 
          
 
     </script>
-
+            -->
 
       <!-- How do I get access to APIs? Section -->
   <section id="apva-faq" class="padding-tb-75 mt-4">
@@ -1132,7 +1203,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl34', 'ctl01', [], [], [], 
 <button class="btn-orange mt-4">Contact Us Now</button> 
             </div>
             <div class="col-md-3">
-                <img src="https://dilsondecano.github.io/people-search-api/images/get-information-icon.png" alt="Alternate Text" />
+                <img src="/images/get-information-icon.png" alt="Alternate Text" />
             </div>
 
         </div>
@@ -1141,11 +1212,38 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl34', 'ctl01', [], [], [], 
     </div>  
   </section>
 
-       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-
+         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 0,
+                autoplay: true,
+                autoplayTimeout: 1500,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    600: {
+                        items: 4,
+                        nav: false
+                    },
+                    1000: {
+                        items: 4,
+                        nav: false,
+                        loop: true
+                    }
+                }
+            })
+        })
+    </script>    
 
 
             
